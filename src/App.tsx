@@ -12,7 +12,7 @@ import Details from './screens/App9/Details';
 // root stack
 export type RootStackParamList = {
   Home: undefined;
-  Details: {productId: string};
+  Details: {product: Product};
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -25,7 +25,7 @@ export default function App(): JSX.Element {
           name="Home"
           component={Home}
           options={{
-            title: 'Trending products',
+            title: 'Trending Products',
           }}
         />
         <Stack.Screen
